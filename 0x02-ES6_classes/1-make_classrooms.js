@@ -1,7 +1,5 @@
-import ClassRoom from "./0-classroom";
+import ClassRoom from './0-classroom';
 
-function initializeRooms(){
-  return [
-    ClassRoom(19), ClassRoom(20), ClassRoom(34)
-  ]
+export default function initializeRooms() {
+  return [19, 20, 34].map((size) => new ClassRoom(size));
 }
